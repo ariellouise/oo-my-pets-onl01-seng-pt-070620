@@ -28,5 +28,15 @@ class Owner
     end 
   end 
   
+  def buy_cat(name) #action buy the Cat
+    new_cat = Cat.new(name, self) #always identify self
+    new_cat 
+  end 
+  
+  def buy_dog(name) #action buy the dog 
+    new_dog = Dog.new(name, self) #identify self and what a new dog is)
+    new_dog
+  end 
+  
   
 end
