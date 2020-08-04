@@ -38,5 +38,11 @@ class Owner
     new_dog
   end 
   
+  def feed_cats
+    self.cats.each do |cat| #call on cat to feed him 
+      cat.mood = "happy" #cat mood change blueprint 
+    end 
+  end 
+  
   
 end
