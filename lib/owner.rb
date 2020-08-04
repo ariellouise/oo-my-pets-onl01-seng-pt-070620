@@ -60,4 +60,9 @@ class Owner
       dog.owner = nil 
     end 
   end 
+  
+  def list_pets #statement of pets owned by Owner class
+    "I have #{self.dogs.count} dog(s), and #{self.cats.count} cat(s)."
+  end 
+end
 end
