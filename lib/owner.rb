@@ -16,6 +16,14 @@ class Owner
     @@all 
   end 
   
+  def self.count #so you can count number of animals in string below
+    @@all.count 
+  end 
+  
+  def self.reset_all #to reset the count 
+    self.all.clear 
+  end 
+  
   def cats #who is class Owner to Cat- associate them
     Cat.all.select do 
       |cat| cat.owner == self # Owner is Cat Owner 
