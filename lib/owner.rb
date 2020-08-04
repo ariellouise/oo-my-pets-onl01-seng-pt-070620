@@ -16,5 +16,17 @@ class Owner
     @@all 
   end 
   
+  def cats #who is class Owner to Cat- associate them
+    Cat.all.select do 
+      |cat| cat.owner == self # Owner is Cat Owner 
+    end 
+  end 
+  
+  def dogs #who is class Owner to Dog - associate them 
+    Dog.all.select do 
+      |dog| dog.owner == self #Owner is Dog owner 
+    end 
+  end 
+  
   
 end
